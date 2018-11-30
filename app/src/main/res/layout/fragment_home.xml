@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.shop.fragment.category.CategoryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/fab_margin_8dp">
+    <include android:layout_height="160dp"
+        android:layout_width="match_parent"
+        layout="@layout/activity_slider"
+        android:layout_marginBottom="@dimen/fab_margin_8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/background_edittext"
+            android:layout_marginBottom="@dimen/fab_margin_8dp">
+            <TextView
+                android:id="@+id/tv_title_special"
+                android:text="Đặt Biệt (Category Special)"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/md_red_400"
+                android:drawableRight="@drawable/cio_ic_discover"
+                android:padding="@dimen/pading_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_title_special"
+                android:paddingLeft="@dimen/pading_bottom"
+                android:paddingRight="@dimen/pading_bottom"
+                android:paddingBottom="@dimen/pading_bottom">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+                    <LinearLayout
+                        android:id="@+id/ll_category_sp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/fab_margin_8dp"
+                            android:layout_marginBottom="@dimen/fab_margin_8dp"/>
+                        <TextView
+                            android:id="@+id/tv_title_special1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/dark_gray"
+                            android:textStyle="bold"
+                            android:text="Áo Len Nam"/>
+                        <ImageView
+                            android:id="@+id/img_category_sp1"
+                            android:layout_width="62dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_logo_store_gray"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+                    <LinearLayout
+                        android:id="@+id/ll_category_sp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:text="s s s s"
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/fab_margin_8dp"
+                        android:layout_marginBottom="@dimen/fab_margin_8dp"/>
+                    <TextView
+                        android:id="@+id/tv_title_special2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/dark_gray"
+                        android:textStyle="bold"
+                        android:text="Áo Len Nam"/>
+                    <ImageView
+                        android:id="@+id/img_category_sp2"
+                        android:layout_width="62dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_logo_store_gray"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/background_edittext"
+        android:layout_marginBottom="@dimen/fab_margin_8dp">
+    <TextView
+        android:id="@+id/tv_title_boy"
+        android:text="Danh mục Nam (Category Boy)"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:padding="@dimen/pading_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_category_boy"
+        android:layout_below="@+id/tv_title_boy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/fab_margin_8dp">
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/background_edittext"
+        android:layout_marginBottom="@dimen/fab_margin_8dp">
+        <TextView
+            android:id="@+id/tv_title_girl"
+            android:text="Danh mục Nữ (Category Girl)"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/pading_left" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_category_girl"
+            android:layout_below="@+id/tv_title_girl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fab_margin_8dp">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
